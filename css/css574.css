@@ -1,0 +1,37 @@
+@media (min-width:575px) {
+    /* #toggle-btn {
+        display: none;
+    } */
+    #menu-flow {
+        display: block !important;
+    }
+    #header {
+        background-color: red !important;
+    }
+    #free {
+        font-size: 50px !important;
+        width: 60%;
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 7%;
+    }
+    #form {
+        margin: 10px !important;
+    }
+    #mainform {
+        text-align: left !important;
+        width: 60%!important;
+    }
+    #ownform {
+        width: 100%!important;
+        background-color: rgb(237, 30, 30) !important;
+        justify-content: center;
+        align-items: center;
+    }
+    #inputform {
+        /* width: 120% !important; */
+    }
+    #tribe {
+        text-align: left !important;
+    }
+}
