@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/css574.css">
-
+    <link rel="stylesheet" href="./css/outside.css">
 </head>
 
 <body>
@@ -20,53 +20,139 @@
         <img src="/image/Spinner-1s-200px (1).gif" alt="loader">
     </div> -->
 
-    <section class="bg-white" id="header">
+    <section class="bg-dark text-white" id="header">
         <header class="d-flex justify-content-between justify-content-md-around align-items-center p-4 ">
             <div class="d-flex flex-column text-center">
                 <div class=" text-bold" style="font-weight: 700; font-size:30px">GKS MUSIC</div>
             </div>
             <div class="menu-flow d-md-flex" style="display:none">
-                <div>
-                    <ul class="fs-5 d-flex text-center my-auto" style="font-weight: 700;">
-                        <li class="mx-3">HOME</li>
-                        <li class="mx-3">SERVICES</li>
-                        <li class="mx-3">ABOUT US</li>
-                    </ul>
-                </div>
-                <div class="d-flex justify-content-center align-items-center fs-5">
-                    <a href="#" class="mx-3 bg-dark px-2 p-1">SignIn</a>
-                    <a href="#" class="mx-3 bg-dark px-2 p-1">Signup</a>
-                </div>
+                <ul class="fs-5 d-flex text-center my-auto" style="font-weight: 700;">
+                    <li class="mx-3">HOME</li>
+                    <li class="mx-3">SERVICES</li>
+                    <li class="mx-3">ABOUT US</li>
+                </ul>
+
             </div>
             <!-- toggle bar -->
-            <div id="toggle-btn" class=" p-1 d-md-none" style="font-size: 20px; border:2px solid rgb(0, 0, 0)">
-                <i class="fa-solid fa-bars mx-2"></i>Menu
-            </div>
+            <button id="toggle-btn" class="btn-toggle p-1 d-md-none" style="font-size: 20px; border:2px solid rgb(0, 0, 0)">
+                <i class="fa-solid fa-bars mx-2"></i>
+            </button>
         </header>
+        <div class="text-center nav-btn" style=" font-weight: 700; height:100vh;position:relative;line-height:40px;">
+            <ul class="" style="position:absolute; top:20%;left:30%">
+                <li class="mx-3">HOME</li>
+                <li class="mx-3">SERVICES</li>
+                <li class="mx-3">ABOUT US</li>
+            </ul>
+        </div>
     </section>
 
-    <section class="imageone ">
-        <div class="d-flex flex-column py-5">
-            <div class="px-2 text-center">
-                <div style="font-weight: 700; font-size:25px; color:rgb(255, 255, 255)" id="free">FREE ACCESS TO ORIGINAL MUSIC & CREATORS</div>
+    <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="text-center mx-auto my-5 " id="mainform">
-                <div class="bg-dark text-white text-center p-2 d-flex flex-row " id="ownform">
-                    <i class="fa-solid m-1 fa-magnifying-glass"></i>
-                    <form style="border:none" id="form">
-                        <input type="text" style="border:none !important;  border-top-right-radius: 8px;  border-bottom-left-radius: 8px" class="w-75 p-1" id="inputform" placeholder="email">
-                        <a href="#" style="background: rgb(163, 62, 12);" class=" p-1 ">Search</a>
-                    </form>
-
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./image/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg" class="d-block w-100" style=" height:400px" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/image/wes-hicks-MEL-jJnm7RQ-unsplash.jpg" class="d-block w-100 " style=" height:400px" alt="...">
+                    <div class="carousel-caption  d-md-block ">
+                        <h5 style="" class="">hll </h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./image/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg" class="d-block w-100" style=" height:400px" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
                 </div>
             </div>
-            <div class="d-flex flex-column bg-dark text-white py-4 text-center w-75 mx-auto" id="tribe">
-                <div class="my-3 fs-2 ">Tribe Of Noise PRO</div>
-                <div class="text-center  mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eius consequuntur ratione iste ducimus</div>
-                <a href="#" style="background:rgb(44, 44, 111);border-radius:8px" class=" p-2 my-3 mx-auto">Go PRO</a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+
+
+    <section class=" d-flex px-4">
+        <div class="mx-3">
+            <form action="">
+                <select name="trending_default" value="Best Of">
+            <option value="Best_of">Best Of</option>
+            <option value="Trending">Trending</option>
+            <option type="submit" value="latest">latest</option>
+           </select>
+            </form>
+        </div>
+        <div class="mx-3">
+            <form action="">
+                <select name="trending_default" value="Best Of">
+            <option value="Best_of">Best Of</option>
+            <option value="Trending">Trending</option>
+            <option value="latest">latest</option>
+           </select>
+            </form>
+        </div>
+        <div class="mx-3">
+            <form action="">
+                <select name="Branch_song" value="Branch_song">
+            <option value="Auchi">Auchi</option>
+            <option value="Warri">Warri</option>
+            <option value="delsu">delsu</option>
+           </select>
+            </form>
+        </div>
+    </section>
+
+    <section class="container py-md-5 bg-dark text-white">
+
+    </section>
+
+    <section>
+        <div>
+            <div>
+                <img src="..." alt="firstimage">
+                <div>Listen to a continuous stream of music from the Tabernacle choir at Temple Square</div>
             </div>
         </div>
     </section>
+
+
+    <audio controls>
+        <source src="./Gks choir - tomkiri.mp3" type="audio/mp3">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+
+
+
+
+
+
+    <!-- outsize working -->
+
+
+
+
+    <script src="./js/outside.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
