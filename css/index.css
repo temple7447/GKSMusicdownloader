@@ -43,6 +43,7 @@ ul {
 
 .nav-btn.active {
     display: block;
+    overflow: hidden;
 }
 
 
